@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jaedyn's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home">
+
+  <h1><i>Jaedyn Hong Zi Xuan's Portfolio</i></h1>
+  <p>Your one-stop site to learn more about me!</p>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#introduction">Introduction</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#edu">Education</a>
+    <a href="#cert">Certification</a>
+    <a href="#contact">Contact</a>
+    <a href="#career">Career</a>
+  </nav>
+
+  <!-- ===== HOME SECTION (original home.html content) ===== -->
+<div class = "background-container">
+  <section class="explore-section" id="home">
+    <div class="explore-box" style="animation-delay: 0.2s;">
+      <h3><b>💡 Skills</b></h3>
+      <p>Explore my programming, software, and creative skills.</p>
+      <a href="#skills">→ Learn More</a>
+    </div>
+    <div class="explore-box" style="animation-delay: 0.4s;">
+      <h3><b>📁 Projects</b></h3>
+      <p>Check out what I've built — from labs to passion projects.</p>
+      <a href="#projects">→ View Projects</a>
+    </div>
+    <div class="explore-box" style="animation-delay: 0.6s;">
+      <h3><b>🎓 Education</b></h3>
+      <p>My academic story, studies, and journey through Sunway.</p>
+      <a href="#edu">→ View Education</a>
+    </div>
+  </section>
+
+  <section class="search-bar">
+    <h2><b>Search My Portfolio 🔍</b></h2>
+    <select id="searchSelect" onchange="updateSearchInput()">
+      <option value="">-- Select a section --</option>
+      <option value="introduction">Introduction</option>
+      <option value="skills">Skills</option>
+      <option value="projects">Projects</option>
+      <option value="education">Education</option>
+      <option value="certification">Certification</option>
+      <option value="contact">Contact</option>
+      <option value="career">Career Aspirations</option>
+    </select>
+    <input type="text" id="searchInput" placeholder="Search..." />
+    <button onclick="combinedSeasection-title-wrapperrch()">Search</button>
+  </section>
+
+</div>
+
+  <!-- ===== INTRODUCTION SECTION (from intro.html) ===== -->
+  <section id="introduction" style="margin-top: 80px;">
+<div class="section-title-wrapper">
+  <h2><b>Introduction</b></h2>
+</div>
+
+
+    <div class="intro-section">
+      <div class="intro-text">
+        <h3><b>Here's a brief introduction of myself:</b></h3>
+        <ul style="text-align: left; max-width: 400px; margin: 0 auto;">
+          <li>Age: 18 years old</li>
+          <li>Course: Bachelor of Software Engineering (Hons)</li>
+          <li>School: Sunway University</li>
+          <li>Expected Year of Graduation: 2027</li>
+        </ul>
+      </div>
+      <div class="intro-img">
+        <figure>
+          <img src="IMG_4338.JPG" alt="Picture of me" />
+          <figcaption>Fig.1 - Picture of me</figcaption>
+        </figure>
+      </div>
+    </div>
+
+
+    <div style="margin-top: 20px; max-width: 800px; margin-left: auto; margin-right: auto; text-align: left;">
+      <h3>More About Me</h3>
+      <p>I've always been super interested in technology and how it changes the world around us. I love figuring out problems with code, creating user-friendly designs, and building software that actually makes a difference. When I'm not studying, I like trying out new programming languages, watching tech-related videos, and reading up on new technology innovations.</p>
+
+      <p>My goal is to work with a great team where I can keep learning and growing as a software engineer, while making a positive impact. Feel free to reach out or check out my portfolio to see what I'm all about!</p>
+
+  </section>
+ 
+<section id = "skills"> 
+<div class="section-title-wrapper">
+  <h2><b>Skills</b></h2>
+</div>
+<br>
+<div class="skills-container fade-in" style="--delay: 1.0">
+    <section class="skills-section">
+      <div class="skills-section-header">
+        <h2><i class="fas fa-code"></i> Programming Languages</h2>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/html-5.png" alt="HTML icon">
+            <span>HTML</span>
+          </div>
+          <span>90%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/css3.png" alt="CSS icon">
+            <span>CSS</span>
+          </div>
+          <span>85%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 85%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/javascript.png" alt="JavaScript icon">
+            <span>JavaScript</span>
+          </div>
+          <span>85%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 85%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/python.png" alt="Python icon">
+            <span>Python</span>
+          </div>
+          <span>80%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 80%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" alt="Java icon">
+            <span>Java</span>
+          </div>
+          <span>70%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 70%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/c-plus-plus-logo.png" alt="C++ icon">
+            <span>C++</span>
+          </div>
+          <span>65%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 65%"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section">
+      <div class="skills-section-header">
+        <h2><i class="fas fa-window-maximize"></i> Web Development</h2>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/web-design.png" alt="Design icon">
+            <span>Responsive Design</span>
+          </div>
+          <span>92%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 92%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/code-file.png" alt="DOM icon">
+            <span>DOM Manipulation</span>
+          </div>
+          <span>85%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 85%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://cdn0.iconfinder.com/data/icons/business-and-leadership-vol-3/128/document_process-512.png" alt="Form icon">
+            <span>Form Handling</span>
+          </div>
+          <span>88%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 88%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/api.png" alt="API icon">
+            <span>API Integration</span>
+          </div>
+          <span>78%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 78%"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section">
+      <div class="skills-section-header">
+        <h2><i class="fas fa-tools"></i> Tools & Technologies</h2>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/eclipse.png" alt="Eclipse icon">
+            <span>Eclipse</span>
+          </div>
+          <span>90%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://storage.caktusgroup.com/media/blog-images/logo.png" alt="PyCharm icon">
+            <span>PyCharm</span>
+          </div>
+          <span>95%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 95%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/mysql-logo.png" alt="MySQL icon">
+            <span>MySQL</span>
+          </div>
+          <span>82%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 82%"></div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/VirtualBox_2024_Logo.svg/1200px-VirtualBox_2024_Logo.svg.png" alt="VirtualBox icon">
+            <span>VirtualBox</span>
+          </div>
+          <span>82%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 82%"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section">
+      <div class="skills-section-header">
+        <h2><i class="fas fa-brain"></i> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Soft <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Skills</h2>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/idea.png" alt="Problem solving icon">
+            <span>Problem Solving</span>
+          </div>
+          <span>90%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/planner.png" alt="Time management icon">
+            <span>Time Management</span>
+          </div>
+          <span>95%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 95%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/conference-call.png" alt="Teamwork icon">
+            <span>Teamwork</span>
+          </div>
+          <span>92%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 92%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/speech-bubble.png" alt="Communication icon">
+            <span>Communication</span>
+          </div>
+          <span>91%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 91%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-category">
+        <div class="skill-info">
+          <div class="skill-name">
+            <img src="https://img.icons8.com/color/48/change.png" alt="Adaptability icon">
+            <span>Adaptability</span>
+          </div>
+          <span>90%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-progress" style="width: 90%"></div>
+        </div>
+      </div>
+  </div>
+
+    </section>
+</section>
+
+<section id = "projects"> 
+<br>
+<div class="section-title-wrapper">
+  <h2><b>My Project Portfolio</b></h2>
+</div>
+<br> 
+  <div class="projects-container">
+    <!-- Project Cards -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="javaprogramming.webp" alt="Java Programming" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Java Programming Project</h3>
+        <span class="project-date">February 2024</span>
+        <p class="project-description">Built Java apps like a student management system and banking tool. Covered OOP, file I/O, and Swing.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">Java</span>
+        </div>
+        <div class="project-links">
+          <a href="Jaedyn Hong Zi Xuan - Individual Assignment.pdf" class="project-link"><i class="fas fa-external-link-alt"></i>Report</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="Programming Project.png" alt="Inventory System" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">E-commerce Inventory System</h3>
+        <span class="project-date">May 2024</span>
+        <p class="project-description">Python-based inventory system with stock monitoring, sales analytics & barcode gen.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">Python</span>
+        </div>
+        <div class="project-links">
+          <a href="Programming Assignment (Code & Report).pdf" class="project-link"><i class="fas fa-external-link-alt"></i>Report</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="STRIDE4CHANGE.png" alt="Fitness App" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Fitness Tracker App</h3>
+        <span class="project-date">July 2024</span>
+        <p class="project-description">Android app for workouts, calorie tracking & chart-based progress logs.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">Java</span>
+        </div>
+        <div class="project-links">
+          <a href="Programming Group Assignment.pdf" class="project-link"><i class="fas fa-external-link-alt"></i>Report</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="databasediagram.png" alt="Library DB" />
+      </div>
+      <div class="project-content">
+        <h3 class="project-title">Library Database System</h3>
+        <span class="project-date">Nov 2024</span>
+        <p class="project-description">MySQL-PHP hospital system with records, inventory, queries, and normalized DB.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">Database</span>
+        </div>
+        <div class="project-links">
+          <a href="Project Database Group Project.pdf" class="project-link"><i class="fas fa-external-link-alt"></i>Report</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id = "edu">
+<div class="section-title-wrapper">
+  <h2><b>My Academic Timeline</b></h2>
+</div>
+<br> 
+    <div class="timeline-container">
+      <!-- University -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="timeline-content">
+          <span class="timeline-date">2024 - Present</span>
+          <h2 class="timeline-title">Bachelor of Software Engineering (Hons)</h2>
+          <div class="education-institution">
+            <i class="fas fa-university"></i>
+            <span>Sunway University</span>
+          </div>
+          <p class="timeline-description">
+            Currently pursuing a degree in Software Engineering with a focus on software development, 
+            learning cutting-edge technologies and best practices in the field.
+          </p>
+          <div class="education-achievements">
+            <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+            <ul class="achievements-list">
+              <li>Dean's List for September 2024 Semester</li>
+              <li>CGPA 4.0 for Semester</li>
+              <li>Achieved Cisco Certification</li>
+              <li>Participated in multiple hackathons</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- College -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-book-open"></i>
+        </div>
+        <div class="timeline-content">
+          <span class="timeline-date">2023-2024</span>
+          <h2 class="timeline-title">Foundation in Science and Technology (FIST)</h2>
+          <div class="education-institution">
+            <i class="fas fa-school"></i>
+            <span>Sunway College</span>
+          </div>
+          <p class="timeline-description">
+            Completed a Foundation in Science and Technology, focusing on ICT, Programming and Mechanical Science. 
+            Developed strong foundational knowledge in computer science principles.
+          </p>
+          <div class="education-achievements">
+            <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+            <ul class="achievements-list">
+              <li>Graduated with High Distinction (CGPA 3.90)</li>
+              <li>Top performer in Programming courses</li>
+              <li>Completed advanced mathematics modules</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Secondary School -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-pencil-alt"></i>
+        </div>
+        <div class="timeline-content">
+          <span class="timeline-date">2019 - 2023</span>
+          <h2 class="timeline-title">Secondary Education</h2>
+          <div class="education-institution">
+            <i class="fas fa-school"></i>
+            <span>Wesley Methodist School Kuala Lumpur (International)</span>
+          </div>
+          <p class="timeline-description">
+            Completed IGCSE with excellent results, focusing on science and mathematics streams. 
+            Developed foundational programming skills through extracurricular activities and projects.
+          </p>
+          <div class="education-achievements">
+            <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+            <ul class="achievements-list">
+              <li>5As in IGCSE examination</li>
+              <li>Leader in Girls' Brigade</li>
+              <li>Active member of Programming Club</li>
+              <li>Developed first website for ICT Project</li>
+              <li>Participated in STEM competitions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Primary School -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fas fa-pencil"></i>
+        </div>
+        <div class="timeline-content">
+          <span class="timeline-date">2014 - 2018</span>
+          <h2 class="timeline-title">Primary Education</h2>
+          <div class="education-institution">
+            <i class="fas fa-school"></i>
+            <span>SJK(C) Puay Chai 2</span>
+          </div>
+          <p class="timeline-description">
+            Developed foundational knowledge and discovered passion for technology. 
+            Excelled in mathematics and science subjects, showing early aptitude for logical thinking.
+          </p>
+          <div class="education-achievements">
+            <h4><i class="fas fa-trophy"></i> Key Achievements</h4>
+            <ul class="achievements-list">
+              <li>Active member of Science Club</li>
+              <li>First exposure to programming concepts</li>
+              <li>Consistent top performer in STEM subjects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section id = "cert">
+
+<div class="section-title-wrapper">
+<h2><b>My Certifications</b></h2>
+</div>
+<br> 
+    <main>
+    <div class="certifications-container">
+      <div class="cert-grid">
+        <!-- Certification 1 -->
+        <div class="cert-card fade-in">
+          <img src="cert1.jpg" alt="Microsoft Certification" class="cert-image">
+          <div class="cert-content">
+            <h2 class="cert-title">Introduction to Programming using HTML and CSS</h2>
+            <div class="cert-issuer">
+              <i class="fas fa-award"></i>
+              <span>Microsoft Technology Associate</span>
+            </div>
+            <div class="cert-date">Issued: July 2021</div>
+            <p class="cert-description">
+              This certification validates fundamental programming knowledge using HTML and CSS,
+              covering web structure, styling, and basic interactivity.
+            </p>
+            <div class="cert-actions">
+              <a href="#" class="btn">View Credential</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Certification 2 -->
+        <div class="cert-card fade-in">
+          <img src="cert2.png" alt="Cisco Certification" class="cert-image">
+          <div class="cert-content">
+            <h2 class="cert-title">CCNA: Introduction to Networks</h2>
+            <div class="cert-issuer">
+              <br><i class="fas fa-award"></i>
+              <span>Cisco Networking Academy</span>
+            </div>
+            <div class="cert-date">Issued: May 2025</div>
+            <p class="cert-description">
+              This certification demonstrates foundational knowledge of networking concepts,
+              including network access, IP connectivity, and basic security.
+            </p>
+            <div class="cert-actions">
+              <a href="#" class="btn">View Credential</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+<section id = "contact">
+
+
+<div class="section-title-wrapper">
+  <h2><b>My Contact Information</b></h2>
+</div>  
+<br> 
+</main>
+    <div class="contact-container">
+      <div class="contact-card fade-in">
+        <div class="contact-info">
+          <div class="contact-item">
+          
+            <div class="contact-details">
+              <h3>Email</h3>
+              <a href="mailto:jaedyn.hong@example.com">jaedynhzx@gmail.com</a>
+              <div class="availability">
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="availability-dot"></span>
+                <span>Typically responds within 24 hours</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+          
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <a href="tel:+60123402421">+60 12-340 2421</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            
+            <div class="contact-details">
+              <h3>Location</h3>
+              <p>Kuala Lumpur, Malaysia</p>
+              <p>Available for remote work worldwide</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-card fade-in">
+        <h2 class="contact-title">Send Me a Message</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Your email">
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Your message here..."></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+</section> 
+<section id = "career">
+
+ <main class="career-container">
+    <!-- Vision Statement - Improved -->
+    <section class="vision-statement fade-in" style="--delay: 0.4;">
+      <div class="section-header">
+<div class="section-title-wrapper">
+  <h2><b>My Professional Vision</b></h2>
+</div>        <p>Charting my path in the tech industry with purpose and ambition</p>
+      </div>
+      
+      <div class="vision-content">
+        <p>As an aspiring technology professional, I aim to leverage my skills in software development and problem-solving to create innovative solutions that make a meaningful impact. My passion lies at the intersection of technology and human-centered design, where I can build products that improve people's lives and solve real-world challenges.</p>
+        
+        <p>In the next 5 years, I envision myself leading development teams at a forward-thinking tech company, contributing to cutting-edge projects in artificial intelligence or sustainable technology. My long-term goal is to establish a tech education initiative that helps underprivileged youth gain access to coding education and career opportunities in the tech industry.</p>
+       
+</section>
+    
+  <footer style="margin-top: 80px;">
+    &copy; 2025 Jaedyn Hong Zi Xuan. All rights reserved.
+  </footer>
+
+  <button id="backToTop" onclick="scrollToTop()">⬆️</button>
+<script src="script.js"></script> 
+  </body>
+</html>
